@@ -1,0 +1,284 @@
+header {
+    position: fixed; left: 0; top: 0; width: 100%; height: 70px; z-index: 999;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+header > a {display: inline-block; font-size: 1.08rem; letter-spacing: 0.02em;}
+header .intro {}
+header .project {
+    padding: 10px 30px; border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50px; margin: 0 60px;
+}
+header .more_design {}
+.wrap {padding-top: 70px; height: 100vh; width: 100%;}
+.wrap #intro {position: relative; text-align: center;}
+.wrap #intro h1 {
+    margin-top: 308px; margin-bottom: 20px;
+    /* animation: scale_change 1s 1 both; */
+}
+.wrap #intro h1 > * {font-size: 2.25rem; display: inline-block;}
+.wrap #intro h1 > p {}
+.wrap #intro h1 .nickname {
+    padding: 10px 20px;
+    border: 1px solid rgba(0,0,0,0.15); border-radius: 42px;
+    margin: 0 10px;
+}
+.wrap #intro h1 .nickname span {font-size: 1.88rem; font-weight: 500;}
+.wrap #intro h1 .nickname img {margin-left: 4px; position: relative; top: -4px;}
+.wrap #intro h2 {margin-bottom: 255px; margin-right: 30px;}
+.wrap #intro h2 span {
+    display: block; padding: 5px 0;
+    font-size: 1.13rem; border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0 auto; width: 80px; color: #717171;
+}
+.wrap #intro h2 .uxui {}
+.wrap #intro h2 .web {margin: 8px auto;}
+.wrap #intro h2 .mobile {}
+.wrap #intro .scroll_guide {
+    animation: scroll_move 0.8s alternate infinite;
+}
+.wrap #intro .scroll_guide > p {color: rgba(0,0,0,0.6);}
+.wrap #intro .scroll_guide > p img {margin-top: 12px;}
+.wrap #intro .bg_circle {}
+.wrap #intro .bg_circle .circle_move {
+    position: absolute; left: -67px; top: 232px;
+    opacity: 0.7;
+    /* animation: rotate 15s linear infinite; */
+}
+.wrap #intro .bg_circle .circle_move img {width: 100%;}
+/* 애니메이션(S) */
+@keyframes scroll_move {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(-12px)}
+}
+@keyframes scale_change {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@keyframes opacity_change {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* 애니메이션(S) */
+.wrap #intro .bg_circle .circle {
+    position: absolute; left: 227px; top: 93px;
+}
+.wrap #intro .bg_circle .circle img {width: 100%;}
+/* ===========================1. introduction */
+.wrap #profile1 {
+    padding: 80px 120px 160px;
+}
+.wrap #profile1 h1 {
+    font-size: 1.75rem; letter-spacing: -0.02em;
+    margin-bottom: 45px;
+}
+.wrap #profile1 .intro_wrap {
+    display: flex; justify-content: space-between;
+}
+.wrap #profile1 .intro_left {width: 323px;}
+.wrap #profile1 .intro_left .my_profile {
+    width: 323px; height: 363px; background-color: gray;
+    margin-bottom: 32px;
+}
+.wrap #profile1 .intro_left .my_profile img {} /* 이미지 추후 추가 */
+.wrap #profile1 .intro_left .my_info {
+    padding: 26px 0; width: 100%; border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+}
+.wrap #profile1 .intro_left .my_info > p {
+    font-size: 0.94rem; color: rgba(0,0,0,0.7);
+    letter-spacing: 0.02em; font-weight: 300;
+}
+.wrap #profile1 .intro_left .my_info .name {
+    font-size: 1.25rem; letter-spacing: 0;
+    color: rgba(0,0,0,1); margin-bottom: 24px;
+}
+.wrap #profile1 .intro_left .my_info .birth {}
+.wrap #profile1 .intro_left .my_info .mail {margin: 10px 0;}
+.wrap #profile1 .intro_left .my_info .github {
+    font-size: 0.94rem; color: rgba(0,0,0,0.7);
+    letter-spacing: 0.02em; font-weight: 300;
+}
+.wrap #profile1 .intro_left .my_info .github span {color: rgba(0,0,0,0.7);}
+/* 오른쪽 영역 */
+/* 오른쪽 영역 공통요소 */
+.intro_right .intro_category {font-weight: 500; margin-right: 60px; width: 90px;}
+.intro_right .intro_content_wrap {margin-bottom: 32px;}
+.intro_right .intro_content_wrap:last-child {margin: 0;}
+.intro_right .intro_date {
+    font-size: 0.94rem; color: rgba(0,0,0,0.3); margin-bottom: 12px;
+}
+.intro_right .intro_title {font-size: 1.13rem; letter-spacing: -0.01em;}
+/* 공통요소 끝 */
+.wrap #profile1 .intro_right {
+    width: calc(100% - (323px + 167px));
+}
+.wrap #profile1 .intro_right .intro_right_top {
+    display: flex;
+}
+.wrap #profile1 .intro_right .intro_right_top .education {
+    margin-right: 179px; display: flex; 
+}
+.wrap #profile1 .intro_right .intro_right_top .license {display: flex;}
+.wrap #profile1 .intro_right .intro_right_top .education .intro_category {}
+.wrap #profile1 .intro_right .intro_right_top .education .intro_content_wrap {}
+.wrap #profile1 .intro_right .intro_right_top .education .intro_content_wrap .intro_date {}
+.wrap #profile1 .intro_right .intro_right_top .education .intro_content_wrap .intro_title {}
+.wrap #profile1 .intro_right .right_career {
+    display: flex; margin: 50px 0; padding: 50px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.wrap #profile1 .intro_right .right_career .intro_category {}
+.wrap #profile1 .intro_right .right_career .intro_category .intro_content_wrap {}
+.wrap #profile1 .intro_right .right_tools {display: flex;}
+.wrap #profile1 .intro_right .right_tools .intro_category {
+    line-height: 1.2;
+}
+.wrap #profile1 .intro_right .right_tools .tool_wrap {}
+.wrap #profile1 .intro_right .right_tools .intro_content_wrap {
+    display: inline-block; margin-right: 30px;
+}
+.wrap #profile1 .intro_right .right_tools .tool_category {
+    margin-bottom: 10px; font-size: 0.94rem;
+}
+.wrap #profile1 .intro_right .right_tools .tools_img {}
+.wrap #profile1 .intro_right .right_tools .tools_img img {
+    display: inline-block; margin-right: 8px;
+}
+.wrap #profile1 .intro_right .right_tools .tools_img img:last-child {margin: 0;}
+/* ==========================웹 프로젝트 소개 */
+/* 공통요소 */
+/* .wrap .border_line {
+    width: 1px; height: 30px; background-color: rgba(0,0,0,0.1);
+    margin: 16px auto;
+} */
+.wrap .detail_btn {
+    color: #3D4DFF; background-color: #fff; box-shadow: 0 4px 4px rgba(197,197,197,0.25);
+    display: block; text-align: center; padding: 5px 0; width: 154px; font-weight: 300;
+    margin-bottom: 8px; border-radius: 3px;
+    background-image: url(../images/arrow_next_p.png); background-repeat: no-repeat;
+    padding-right: 12px; border: 1px solid #3443ee05;
+    background-position-y: 48%; background-position-x: 94%;
+}
+.wrap .detail_btn:hover {background-color: #eeebff; border: 1px solid #3443ee09;}
+.wrap .detail_btn > span {font-weight: 500;}
+.wrap .links {display: flex; flex-flow: column nowrap; align-items: end;}
+.wrap .prototype_btn {
+    background-color: #3D4DFF; color: #fff; width: 182px; padding: 5px 0;
+    display: block; text-align: center;  font-weight: 200; border-radius: 3px;
+    background-image: url(../images/arrow_next_w.png); background-repeat: no-repeat;
+    padding-right: 12px;
+    background-position-y: 48%; background-position-x: 94%;
+}
+.wrap .prototype_btn:hover {background-color: #3444ee;}
+.wrap .prototype_btn > span {font-weight: 300;}
+/* 공통요소 (E) */
+.wrap #project1 {padding: 60px 120px 0;}
+.wrap #project1 > h1 {
+    font-size: 1.64rem; text-align: center;
+}
+.wrap #project1 > .web_content_wrap {margin-top: 45px;}
+.wrap #project1 .web_content_wrap ul {
+    display: flex; justify-content: space-between; flex-flow: row wrap;
+}
+.wrap #project1 .web_content_wrap ul li {
+    background-color: #f5f5f5; width: calc((100% - 16px) / 2);
+    position: relative; overflow: hidden; height: 350px;
+    padding: 30px; border-radius: 12px;
+}
+.wrap #project1 ul li::after {
+    content: ''; position: absolute; right: 0; top: 0;
+    width: 100%; height: 100%; background: linear-gradient(transparent 65%, #f5f5f5 90%);
+    z-index: 100;
+}
+.wrap #project1 .web_content_wrap ul li .web_content_wrap {
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+    height: 100%; position: relative; z-index: 200;
+}
+.wrap #project1 .web_content_wrap ul li:nth-child(1),
+.wrap #project1 .web_content_wrap ul li:nth-child(2) {
+    margin-bottom: 16px;
+}
+.wrap #project1 .web_content_wrap ul li h1 {}
+.wrap #project1 .web_content_wrap ul li h1 span {
+    font-size: 1.08rem; font-weight: 300; margin-bottom: 4px;
+    display: block; color: rgba(0,0,0,0.6);
+}
+.wrap #project1 .web_content_wrap ul li h1 em {
+    font-size: 1.44rem; letter-spacing: 1.5; font-weight: 500;
+}
+.wrap #project1 .web_content_wrap ul li .d_mockup {
+    position: absolute; right: 20px; top: -38px;
+    z-index: 1;
+}
+.wrap #project1 .web_content_wrap ul li .d_mockup:hover {
+    transform: scale(1.5);
+}
+.wrap #project1 .web_content_wrap ul li .d_mockup img {}
+.wrap #project1 .web_content_wrap ul li .d_detail {
+    display: flex; justify-content: space-between; align-items: flex-end;
+}
+.wrap #project1 .web_content_wrap ul li .d_detail .d_info {}
+.wrap #project1 .web_content_wrap ul li .d_detail .d_info p {
+    color: rgba(0,0,0,0.6); margin-top: 8px;
+}
+.wrap #project1 .web_content_wrap ul li .d_detail .links {}
+.wrap #project1 .web_content_wrap ul li .d_detail .links .detail_btn {}
+/* ==================================모바일프로젝트 소개  */
+.wrap #project2 {padding: 80px 120px 0;}
+.wrap #project2 > h1 {
+    text-align: center; margin-bottom: 60px;
+    font-size: 1.64rem; text-align: center;
+}
+.wrap #project2 .web_content_wrap {}
+.wrap #project2 .web_content_wrap ul {
+    display: flex; justify-content: space-between;
+}
+.wrap #project2 .web_content_wrap ul li {
+    background-color: #f5f5f5; width: calc((100% - (16px * 3)) / 4);
+    padding: 36px; position: relative; height: 670px;
+    overflow: hidden; border-radius: 12px;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+.wrap #project2 .web_content_wrap ul li .m_content_top {}
+.wrap #project2 .web_content_wrap ul li .m_content_top .m_title {
+    display: flex; justify-content: space-between;
+    padding-bottom: 18px; border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.wrap #project2 .web_content_wrap ul li .m_content_top h1 span {
+    font-size: 1.08rem; font-weight: 300; margin-bottom: 4px;
+    display: block; color: rgba(0,0,0,0.6);
+}
+.wrap #project2 .web_content_wrap ul li .m_content_top h1 em {
+    font-size: 1.44rem; letter-spacing: 1.5; font-weight: 500;
+}
+.wrap #project2 .web_content_wrap ul li .m_content_top .design_tag {
+    font-size: 0.88rem; padding: 6px 8px; height: max-content;
+    background-color: #e7e9ff; color: #7e89ff; border-radius: 2px;
+}
+.wrap #project2 .web_content_wrap ul li .m_content_top .build {
+    background-color: #3f3f3f; color: #fff; font-weight: 200;
+}
+.wrap #project2 .web_content_wrap ul li .m_detail {}
+.wrap #project2 .web_content_wrap ul li .m_info {margin-top: 20px;}
+.wrap #project2 .web_content_wrap ul li .m_info p {
+    margin-bottom: 8px; color: rgba(0,0,0,0.5);
+}
+.wrap #project2 .web_content_wrap ul li .m_mockup {
+    position: absolute; right: 0; bottom: 8px; z-index: 100;
+    transform: rotate(23.33deg);
+}
+.wrap #project2 .web_content_wrap ul li .m_mockup img {
+    transform: scale(1.05);
+}
+.wrap #project2 .web_content_wrap ul li .m_shadow {
+    position: absolute; left: -230px; bottom: -100px; z-index: 1;
+    opacity: 0.5; right: 30px; bottom: 0; transform: rotate(23.33deg);
+    filter: grayscale(1) blur(10px);
+}
+.wrap #project2 .web_content_wrap ul li .m_detail .links {}
+.wrap #project2 .web_content_wrap ul li .m_detail .links .detail_btn {}
+.wrap #project2 .web_content_wrap ul li .m_detail .links .prototype_btn {}

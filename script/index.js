@@ -27,14 +27,14 @@ nav[0].addEventListener('click',function(e){
     }, 0);
 })
 nav[1].addEventListener('click',function(e){
-    e.preventDefault();
+    /* e.preventDefault(); */
     wrap.slideTo(2, 1000);
     setTimeout(() => {
         ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
     }, 0);
 })
 nav[2].addEventListener('click',function(e){
-    e.preventDefault();
+    /* e.preventDefault(); */
     wrap.slideTo(4, 1000);
     setTimeout(() => {
         ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★

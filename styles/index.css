@@ -282,7 +282,7 @@ header .more_design {}
     filter: grayscale(1) blur(10px);
     transition: transform 0.5s;
 }
-.wrap #project2 .web_content_wrap ul li .m_detail .links {}
+.wrap #project2 .web_content_wrap ul li .m_detail .links {position: relative; z-index: 800;}
 .wrap #project2 .web_content_wrap ul li .m_detail .links .detail_btn {}
 .wrap #project2 .web_content_wrap ul li .m_detail .links .prototype_btn {}
 /* 디자인 프로젝트 소개 */

@@ -31,7 +31,7 @@
     /* 전체 간격 조정 */
     main > div {padding: 0 40px;}
     .index_page h1 {padding-top: 200px;}
-    .index_page .scroll_guide {margin-top: 240px}
+    .index_page .scroll_guide {margin-top: 400px}
     /* intro 레이아웃 변경 */
     .intro_page .intro_wrap {flex-direction: column;}
     .intro_page .intro_wrap .intro_left {display: flex; flex-flow: row nowrap; justify-content: space-between; width: 100%; margin-bottom: 40px;}

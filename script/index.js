@@ -1,29 +1,30 @@
 /* 헤더 영역 각각 카테고리 누르면 해당 영역으로 스크롤 */
 const nav = document.querySelectorAll('nav a')
-const slides = document.querySelectorAll('.wrap > .swiper-wrapper > .swiper-slide')
+const slides = document.querySelectorAll('main > div')
+console.log(slides);
 
-nav[0].addEventListener('click',function(e){
-    e.preventDefault();
-    wrap.slideTo(1, 1000);
-    setTimeout(() => {
-        ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
-    }, 0);
-})
-nav[1].addEventListener('click',function(e){
-    /* e.preventDefault(); */
-    wrap.slideTo(2, 1000);
-    setTimeout(() => {
-        ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
-    }, 0);
-})
-nav[2].addEventListener('click',function(e){
-    /* e.preventDefault(); */
-    wrap.slideTo(4, 1000);
-    setTimeout(() => {
-        ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
-    }, 0);
-})
-
+// 3) 클릭 이벤트 핸들러 등록
+nav[0].addEventListener('click', (e) => {
+    e.preventDefault(); // a 태그의 기본 이동 방지
+    window.scrollTo({
+        top: slides[1].offsetTop - 100,
+        behavior: 'smooth' // 부드러운 스크롤
+    });
+});
+nav[1].addEventListener('click', (e) => {
+    e.preventDefault(); // a 태그의 기본 이동 방지
+    window.scrollTo({
+        top: slides[2].offsetTop - 100,
+        behavior: 'smooth' // 부드러운 스크롤
+    });
+});
+nav[2].addEventListener('click', (e) => {
+    e.preventDefault(); // a 태그의 기본 이동 방지
+    window.scrollTo({
+        top: slides[4].offsetTop - 100,
+        behavior: 'smooth' // 부드러운 스크롤
+    });
+});
 
 /* 프로젝트 */
 const popup_bg = document.querySelector('.popup_bg')

@@ -1,0 +1,54 @@
+@media screen and (max-width:1500px){
+    main .info > p {font-size: 0.93rem;}
+    .intro_page .intro_wrap .intro_title {margin-bottom: 24px; width: 120px;}
+    .intro_page .intro_wrap .intro_left .my_info p,
+    .intro_page .intro_wrap .intro_left .my_info .github {font-size: 0.83rem;}
+    .intro_page .intro_wrap .intro_right .intro_right_top .education,
+    .intro_page .intro_wrap .intro_right .intro_right_top .license, 
+    .intro_page .intro_wrap .intro_right .right_career,
+    .intro_page .intro_wrap .intro_right .right_tools {display: flex; flex-flow: column nowrap;}
+    .intro_page .intro_wrap .intro_right .right_tools .tool_wrap .intro_content_wrap .tools_img img {width: 60px;}
+    /* mockup 간격 조정 */
+    .web_design .web_content_wrap ul li .web_title h2 {margin-right: 40px;}
+}
+@media screen and (max-width:1400px){
+    /* mobile 포트폴리오 레이아웃 변경 */
+    .mobile_design .mobile_content_wrap ul {flex-flow: row wrap;}
+    .mobile_design .mobile_content_wrap ul li {width: calc((100% - (16px * 1)) / 2);}
+    .mobile_design .mobile_content_wrap ul li:nth-child(1),
+    .mobile_design .mobile_content_wrap ul li:nth-child(2) {margin-bottom: 16px;}
+    .mobile_design .mobile_content_wrap ul li .m_detail .m_mockup {left: -240px; bottom: 20px; transform: rotate(23.33deg) scale(1.3);}
+    .mobile_design .mobile_content_wrap ul li:hover .m_mockup {
+        transform: scale(1.3) rotate(20.33deg) translateX(20px) translateY(-10px);
+    }
+}
+@media screen and (max-width:1300px) {
+    .web_design .web_content_wrap ul li {padding: 24px;}
+    .web_design .web_content_wrap ul li .detail {padding-bottom: 24px;}
+    .web_design .web_content_wrap ul li .web_title h2 {margin-right: 25px;}
+}
+@media screen and (max-width:1100px){
+    /* 전체 간격 조정 */
+    main > div {padding: 0 40px;}
+    .index_page h1 {padding-top: 200px;}
+    .index_page .scroll_guide {margin-top: 240px}
+    /* intro 레이아웃 변경 */
+    .intro_page .intro_wrap {flex-direction: column;}
+    .intro_page .intro_wrap .intro_left {display: flex; flex-flow: row nowrap; justify-content: space-between; width: 100%; margin-bottom: 40px;}
+    .intro_page .intro_wrap .intro_left .my_profile {width: 25%; margin-bottom: 0;}
+    .intro_page .intro_wrap .intro_left .my_info {
+        align-self: stretch; width: 71%; padding: 0;
+        display: flex; flex-flow: column nowrap; justify-content: center;
+    }
+    .intro_page .intro_wrap .intro_left .my_info p,
+    .intro_page .intro_wrap .intro_left .my_info .github {font-size: 0.88rem;}
+    /* intro 오른쪽 영역 */
+    .intro_page .intro_wrap .intro_right {width: 100%;}
+    .intro_page .intro_wrap .intro_right .intro_date {font-size: 0.88rem;}
+    .intro_page .intro_wrap .intro_right .intro_info {font-size: 1rem;}
+    .intro_page .intro_wrap .intro_right .right_career {padding: 30px 0; margin: 30px 0;}
+    /* web 포트폴리오 레이아웃 변경 */
+    .web_design .web_content_wrap ul li {width: 100%;}
+    .web_design .web_content_wrap ul li:nth-child(2) {margin-bottom: 16px;}
+    .web_design .web_content_wrap ul li .web_title h2 {margin-right: 100px;}
+}

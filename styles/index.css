@@ -212,8 +212,8 @@ main .links .prototype_btn {
 .mobile_design .mobile_content_wrap ul li .m_content_top .info p {margin-bottom: 8px; color: rgba(0,0,0,0.5);}
 .mobile_design .mobile_content_wrap ul li .m_detail {position: relative;}
 .mobile_design .mobile_content_wrap ul li .m_detail .m_mockup {
-    position: relative; left: -300px; bottom: 50px; z-index: 100;
-    transform: rotate(23.33deg) scale(1.2);
+    position: relative; left: -100px; top: 60px; z-index: 100;
+    transform: rotate(23.33deg) scale(0.95);
     transition: transform 0.5s;
 }
 .mobile_design .mobile_content_wrap ul li .m_detail .m_mockup img {}
@@ -226,7 +226,7 @@ main .links .prototype_btn {
 }
 .mobile_design .mobile_content_wrap ul li .m_detail .m_shadow img {}
 .mobile_design .mobile_content_wrap ul li:hover .m_mockup {
-    transform: scale(1.1) rotate(20.33deg) translateX(20px) translateY(-10px);
+    transform: scale(1.05) rotate(20.33deg) translateX(20px) translateY(-10px);
 }
 .mobile_design .mobile_content_wrap ul li .m_detail .links {
     position: relative; z-index: 800;

@@ -31,7 +31,7 @@
 @media screen and (max-width:1100px){
     /* 전체 간격 조정 */
     main > div {padding: 0 40px;}
-    .index_page h1 {padding-top: 250px;}
+    .index_page h1 {padding-top: 200px;}
     /* intro 레이아웃 변경 */
     .intro_page .intro_wrap {flex-direction: column;}
     .intro_page .intro_wrap .intro_left {display: flex; flex-flow: row nowrap; justify-content: space-between; width: 100%; margin-bottom: 40px;}
@@ -53,5 +53,5 @@
     .web_design .web_content_wrap ul li .web_title h2 {margin-right: 100px;}
 }
 @media screen and (max-width:800px) {
-    .index_page h1 {padding-top: 350px;}
+    .index_page h1 {padding-top: 250px;}
 }

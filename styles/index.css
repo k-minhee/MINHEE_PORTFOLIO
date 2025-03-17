@@ -17,7 +17,7 @@ header .more_design {}
 /* ★★★★ 전체 페이지 공통 요소 - 전체 여백, 페이지 타이틀, 포폴 타이틀/정보/버튼 ★★★★ */
 main {}
 main > div {padding: 0 90px; margin-bottom: 90px;}
-main > div:first-child {/* margin-bottom: 0; */}
+main > div:first-child {margin-bottom: 90px;}
 main .page_title {font-size: 1.75rem; letter-spacing: -0.02em; margin-bottom: 40px;}
 /* 포트폴리오 타이틀 */
 main h2 {}
@@ -46,7 +46,9 @@ main .links .prototype_btn {
 }
 /* ★★★★전체 페이지 공통 요소 - 전체 여백, 페이지 타이틀, 포폴 타이틀/정보/버튼 (E) ★★★★ */
 /* index page, 첫 페이지 */
-.index_page {padding: 80px 0; position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;}
+.index_page {
+    position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
 .index_page h1 {
     position: relative;
     text-align: center;
@@ -82,9 +84,9 @@ main .links .prototype_btn {
     100% {transform: translateY(-12px)}
 }
 .index_page .scroll_guide {
-    text-align: center; 
+    text-align: center; padding-bottom: 20px;
     animation: scroll_move 0.8s alternate infinite;
-    position: absolute; bottom: 30px; left: calc(50% -110px);
+    position: absolute; bottom: 0px; left: calc(50% -110px);
 }
 .index_page .scroll_guide p {color: #717171; margin-bottom: 12px;}
 .index_page .scroll_guide p img {}

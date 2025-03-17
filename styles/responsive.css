@@ -10,6 +10,7 @@
     .intro_page .intro_wrap .intro_right .right_tools .tool_wrap .intro_content_wrap .tools_img img {width: 60px;}
     /* mockup 간격 조정 */
     .web_design .web_content_wrap ul li .web_title h2 {margin-right: 40px;}
+    .index_page .scroll_guide {display: none;}
 }
 @media screen and (max-width:1400px){
     /* mobile 포트폴리오 레이아웃 변경 */

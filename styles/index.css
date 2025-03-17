@@ -46,13 +46,13 @@ main .links .prototype_btn {
 }
 /* ★★★★전체 페이지 공통 요소 - 전체 여백, 페이지 타이틀, 포폴 타이틀/정보/버튼 (E) ★★★★ */
 /* index page, 첫 페이지 */
-.index_page {padding: 80px 0; position: relative; height: 100vh;}
+.index_page {padding: 80px 0; position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;}
 .index_page h1 {
-    position: relative; padding-top: 320px;
+    position: relative;
     text-align: center;
     display: flex; justify-content: center;
 }
-.index_page h1 .circle {position: relative; z-index: 1; margin-top: 20px;}
+.index_page h1 .circle {display: none;}
 .index_page h1 .circle img {width: 100%;}
 .index_page h1 p {font-size: 2.25rem;}
 .index_page h1 .nickname {}
@@ -81,7 +81,11 @@ main .links .prototype_btn {
     0% {transform: translateY(0)}
     100% {transform: translateY(-12px)}
 }
-.index_page .scroll_guide {text-align: center; margin-top: 260px; animation: scroll_move 0.8s alternate infinite;}
+.index_page .scroll_guide {
+    text-align: center; 
+    animation: scroll_move 0.8s alternate infinite;
+    position: absolute; bottom: 30px; left: calc(50% -110px);
+}
 .index_page .scroll_guide p {color: #717171; margin-bottom: 12px;}
 .index_page .scroll_guide p img {}
 /* introduction */

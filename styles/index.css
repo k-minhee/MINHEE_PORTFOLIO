@@ -252,6 +252,8 @@ main .links .prototype_btn {
 .more_design .contents .left .banner {
     display: flex; margin-bottom: 8px;
 }
+.more_design .contents .left div {cursor: pointer;}
+.more_design .contents .design3 div {cursor: pointer;}
 .more_design .contents .left .banner > div {border-radius: 12px; overflow: hidden;}
 .more_design .contents .left .banner .de2 {margin: 0 8px;}
 .more_design .contents .left .banner img,

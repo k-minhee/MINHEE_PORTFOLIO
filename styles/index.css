@@ -49,33 +49,33 @@ main .links .prototype_btn {
 .index_page {
     position: relative; height: 100vh; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
 }
-.index_page h1 {
+.index_page .index_wrap {
     position: relative;
     text-align: center;
     display: flex; justify-content: center;
 }
-.index_page h1 .circle {display: none;}
-.index_page h1 .circle img {width: 100%;}
-.index_page h1 p {font-size: 2.25rem;}
-.index_page h1 .nickname {}
-.index_page h1 .nickname .designer_next {position: relative; top: -10px; margin: 0 13px; z-index: 3;}
-.index_page h1 .nickname .designer_next > p {
+.index_page .index_wrap .circle {display: none;}
+.index_page .index_wrap .circle img {width: 100%;}
+.index_page .index_wrap p {font-size: 2.25rem;}
+.index_page .index_wrap .nickname {}
+.index_page .index_wrap .nickname .designer_next {position: relative; top: -10px; margin: 0 13px; z-index: 3;}
+.index_page .index_wrap .nickname .designer_next > p {
     display: flex; align-items: center;
     border-radius: 40px; padding: 10px 20px; 
     border: 1px solid rgba(0,0,0, 0.1);
     background-color: #fff;
 }
-.index_page h1 .nickname .designer_next p span {
+.index_page .index_wrap .nickname .designer_next p span {
     font-size: 1.88rem; font-weight: 500; letter-spacing: -0.02em;
     margin-right: 13px;
 }
-.index_page h1 .nickname .designer_next p img {}
-.index_page h1 .nickname .designer_next h2 {margin-top: 10px;}
-.index_page h1 .nickname .designer_next h2 span {
+.index_page .index_wrap .nickname .designer_next p img {}
+.index_page .index_wrap .nickname .designer_next h2 {margin-top: 10px;}
+.index_page .index_wrap .nickname .designer_next h2 span {
     display: block; font-size: 1.25rem; padding: 8px;
     color: #717171;
 }
-.index_page h1 .circle {
+.index_page .index_wrap .circle {
     position: absolute; width: 100%; left: 0; top: 11.5%;
     opacity: 0.8;
 }
@@ -253,7 +253,7 @@ main .links .prototype_btn {
     display: flex; margin-bottom: 8px;
 }
 .more_design .contents .left div {cursor: pointer;}
-.more_design .contents .design3 div {cursor: pointer;}
+.more_design .contents .design3 {cursor: pointer;}
 .more_design .contents .left .banner > div {border-radius: 12px; overflow: hidden;}
 .more_design .contents .left .banner .de2 {margin: 0 8px;}
 .more_design .contents .left .banner img,
